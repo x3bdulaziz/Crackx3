@@ -38,7 +38,7 @@ example:
     python3 crackx3.py -d -hash xws1r5... -w /usr/share/wordlists/rockyou.txt
     python3 crackx3.py -b -hash qef9o4... -w rockyou.txt
 ```
-##Example
+## Example
 ```bash
 python3 crackx3.py -d -hash f7c3bc1d808e04732adf679965ccc34ca7ae3441 -w /usr/share/wordlists/rockyou.txt
 ```
