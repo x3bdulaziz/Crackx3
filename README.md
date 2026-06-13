@@ -1,21 +1,28 @@
-# Hash-Cracker-Python
-Lightweight Python hash cracker with automatic hash type detection and multi-algorithm support.
+# crackx3
+A lightweight, high-performance Python hash cracker featuring automatic hash type detection and multi-algorithm brute-force support.
 
-# Python Hash Cracker
-
-A simple and efficient Python script to crack cryptographic hashes using a wordlist (dictionary attack). The tool dynamically detects common hash types based on their length and supports fallback brute-force verification for unknown formats.
+## About crackx3
+**crackx3** is an efficient CLI tool designed for security professionals and enthusiasts to crack cryptographic hashes. It utilizes `multiprocessing` to maximize CPU usage, ensuring fast and reliable performance during dictionary attacks.
 
 ## Features
-* **Auto-Detection:** Automatically recognizes MD5, SHA1, SHA256, and SHA512 based on hash string length.
-* **Brute-Force Mode:** If the hash format is unknown, it tests the wordlist against all supported algorithms.
-* **Nested Loop Processing:** Highly optimized iteration over multiple algorithms per candidate password.
+* **Auto-Detection:** Automatically identifies MD5, SHA1, SHA256, and SHA512 based on hash string length.
+* **Brute-Force Mode:** Supports testing against multiple algorithms simultaneously if the hash format is unknown.
+* **Optimized Performance:** Built with `ProcessPoolExecutor` for high-speed concurrent processing.
+* **User-Friendly CLI:** Clear interface with robust error handling and progress monitoring.
 
-## Prerequisites
-Before running the script, ensure you have Python 3 installed. You will also need a wordlist file named `rockyou.txt` placed in the same directory as the script.
+## Requirements & Setup
 
-## Installation & Setup
+### Prerequisites
+* **Python 3.x**
+* A wordlist file (e.g., `rockyou.txt`).
 
-1. Clone the repository or download the script file:
-   ```bash
-   git clone [https://github.com/x3bdulaziz/Hash-Cracker-Python.git](https://github.com/x3bdulaziz/Hash-Cracker-Python.git)
-   cd Hash-Cracker-Python
+### Installation
+1. **Clone the repository:**
+```bash
+git clone [https://github.com/x3bdulaziz/Crackx3.git](https://github.com/x3bdulaziz/Crackx3.git)
+cd Crackx3
+```
+Wordlist Preparation:
+To keep the repository lightweight and portable, this tool does not include large wordlists. Users are expected to provide their own wordlist.
+
+Tip for Kali Linux users: You can typically find a pre-installed wordlist at:`/usr/share/wordlists/rockyou.txt`
